@@ -85,7 +85,7 @@ free-astro-template/
 │   │   ├── index.astro
 │   │   ├── about.astro
 │   │   ├── portfolio.astro
-│   │   ├── starwind-demo.astro  # Component showcase
+│   │   ├── demo.astro  # Component showcase
 │   │   └── blog/[...slug].astro
 │   └── styles/
 │       ├── global.css           # Imports base styles in correct order
@@ -189,7 +189,7 @@ Accessibility: If Lighthouse flags contrast, slightly increase background lumina
 
 ## 🛰️ Demo Page
 
-Visit `/starwind-demo` to see the themed Starwind UI components (Badge, Button, Timeline, Carousel) with this template’s styling.
+Visit `/demo` to see the themed Starwind UI components (Badge, Button, Timeline, Carousel) with this template’s styling.
 
 ---
 
