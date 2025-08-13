@@ -14,6 +14,8 @@ Production-ready Astro blog using Tailwind CSS v4 and Starwind UI patterns, with
 - ✅ SEO: canonical URLs, OpenGraph, sitemap, RSS feed, sharing icons, etc
 - ✅ Accessibility-oriented tokens (contrast-ready) and card surface utilities
 
+<img width="941" height="519" alt="image" src="https://github.com/user-attachments/assets/e88187b8-6ed1-459e-bb81-61b64e06ee2a" />
+
 ## 🔧 Requirements
 
 - Node.js 18+ (or 20+ recommended)
