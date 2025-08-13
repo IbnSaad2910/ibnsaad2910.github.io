@@ -6,7 +6,7 @@
 .card-surface {
   background: var(--card);
   color: var(--card-foreground);
-  border: 0;
+  border: 1px solid var(--color-border-light);
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-md);
   backdrop-filter: saturate(140%) blur(6px);
@@ -78,6 +78,10 @@
   filter: blur(0.2px) drop-shadow(0 0 12px rgba(var(--accent-rgb), 0.45));
   border-radius: 999px;
 }
+
+/* Header hover color should be accent, not hardcoded white */
+.sw-header .internal-links a:hover { color: var(--accent) !important; }
+.sw-header .group:hover { color: var(--accent); }
 
 /* Blog utilities */
 .blog-prose { width: calc(100% - 2em); max-width: 860px; margin: 0 auto; padding: 1.25em; }

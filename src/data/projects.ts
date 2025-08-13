@@ -1,5 +1,5 @@
 import PhoenixIcon from '../assets/logos/Phoenix-logo.svg?raw';
-import AstroIcon from '../assets/logos/Astro-logo.svg?raw';
+import N8nIcon from '../assets/logos/N8n-logo.svg?raw';
 import SupabaseIcon from '../assets/logos/Supabase-logo.svg?raw';
 import PosthogIcon from '../assets/logos/posthog-logo.svg?raw';
 import PythonIcon from '../assets/logos/Python-logo.svg?raw';
@@ -8,12 +8,12 @@ import TailwindIcon from '../assets/logos/Tailwind-logo.svg?raw';
 
 export const projects = [
 	{
-		title: "Personal Site & Blog (Astro)",
-		techStack: "Astro • TypeScript • Tailwind CSS • Markdown",
-		description: "Static‑first site with blog, RSS, SEO, dark mode, and CI/CD previews. Lighthouse‑green performance and accessibility.",
+		title: "Workflow Automation Orchestrator (n8n)",
+		techStack: "n8n • Node.js • TypeScript • PostgreSQL",
+		description: "Event‑driven workflows for data sync, notifications, and back‑office automation. Custom nodes, secrets management, retries, and metrics.",
 		ctaText: "View Repo →",
 		ctaLink: "#",
-		icon: AstroIcon
+		icon: N8nIcon
 	},
 	{
 		title: "SaaS API Starter (Auth, Billing, RBAC)",
