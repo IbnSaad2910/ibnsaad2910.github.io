@@ -2,6 +2,8 @@
 
 Production-ready Astro blog using Tailwind CSS v4 and Starwind UI patterns, with a full theming system via CSS variables and reusable `.astro` components.
 
+Demo at https://free-astro-template.netlify.app/
+
 ## ✨ Features
 
 - ✅ Astro SSG with fast dev experience
