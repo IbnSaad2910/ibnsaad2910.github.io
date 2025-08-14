@@ -43,7 +43,7 @@ const { items, centered = true } = props;
 ---
 
 {centered ? (
-  <div class="relative mx-auto max-w-5xl">
+  <div class="relative mx-auto max-w-5xl px-0 md:px-0">
     <!-- Center vertical line -->
     <div class="pointer-events-none absolute inset-y-0 left-1/2 w-px -translate-x-1/2 bg-[var(--border)]"></div>
 
@@ -95,14 +95,14 @@ const { items, centered = true } = props;
     </div>
   </div>
 ) : (
-  <div class="relative mx-auto max-w-5xl">
+    <div class="relative mx-auto max-w-5xl px-0 md:px-0">
     <!-- Left vertical line -->
-    <div class="pointer-events-none absolute top-0 bottom-0 left-5 w-px bg-[var(--border)]"></div>
-    <div class="space-y-12">
+    <div class="pointer-events-none absolute inset-y-0 left-0 md:left-5 w-px bg-[var(--border)]"></div>
+    <div class="space-y-8 md:space-y-12">
       {items.map((item) => (
-        <div class="relative pl-16">
-          <div class="absolute left-5 top-4 size-3 rounded-full bg-[var(--accent)] ring-4 ring-[color:var(--background)]"></div>
-          <div class="card-surface p-6">
+        <div class="relative pl-5 md:pl-16">
+          <div class="absolute left-0 md:left-5 top-3 md:top-4 size-2 md:size-3 rounded-full bg-[var(--accent)] ring-2 md:ring-4 ring-[color:var(--background)]"></div>
+          <div class="card-surface p-4 md:p-6 w-full min-w-0">
             <div class="mb-2 space-y-1">
               <h3 class="text-xs leading-snug font-semibold m-0 flex items-center gap-2">
                 <span class="inline-flex" aria-hidden="true" set:html={jobIcon} />
