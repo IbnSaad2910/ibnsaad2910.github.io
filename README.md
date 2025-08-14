@@ -1,5 +1,7 @@
 # Astro + Starwind UI Blog Template
 
+<img width="1536" height="1024" alt="free-astro-theme" src="https://github.com/user-attachments/assets/0419a038-def9-4e88-916d-23add03ce366" />
+
 Production-ready Astro blog using Tailwind CSS v4 and Starwind UI patterns, with a full theming system via CSS variables and reusable `.astro` components.
 
 Demo at https://free-astro-template.netlify.app/
