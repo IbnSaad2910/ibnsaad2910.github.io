@@ -274,6 +274,96 @@ Tip: Feed readers can auto‑discover tag/category feeds via the `<link rel="alt
 - Static output in `dist/`. Any static host works (Vercel, Netlify, Cloudflare Pages, GitHub Pages).
 - Ensure `site` is set in `astro.config.mjs` for correct absolute URLs in feeds and metadata.
 
+## 🚀 GitHub Pages (deploy)
+
+Deploy to GitHub Pages with one workflow.
+
+1) Configure site and base in `astro.config.mjs` (critical)
+
+```js
+// astro.config.mjs
+import { defineConfig } from 'astro/config';
+
+export default defineConfig({
+  // User/Org Pages (https://<user>.github.io):
+  //   site: 'https://<user>.github.io',
+  //   base: '/'
+  // Project Pages (https://<user>.github.io/<repo>/):
+  //   site: 'https://<user>.github.io/<repo>/',
+  //   base: '/<repo>/'
+  site: 'https://your-user.github.io',
+  base: '/',
+});
+```
+
+2) Enable GitHub Pages in your repo
+- Settings → Pages → Build and deployment → Source: GitHub Actions
+
+3) Add the workflow (ready to copy)
+
+Create `.github/workflows/deploy.yml` with:
+
+```yaml
+name: Deploy Astro to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+4) Commit and push to `main`
+- First run may take a minute. Check Actions tab for logs and the Pages URL.
+
+Troubleshooting
+- CSS/assets 404 on project pages → `base` is missing or wrong. Set `base: '/<repo>/'` and rebuild.
+- Wrong canonical URLs/RSS → `site` incorrect. Use your real Pages URL (or your custom domain if you set one).
+- Custom domain (CNAME) → Set `site: 'https://example.com'` and keep `base: '/'`.
+
 ## ⚙️ Configuration (do this first)
 
 1) Set your canonical site URL in `astro.config.mjs`:
