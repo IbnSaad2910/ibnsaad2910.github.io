@@ -1,11 +1,9 @@
-import avatar from '../assets/images/sample-avatar.jpg';
+import avatar from "../assets/images/profile_circle.jpg";
 
 export const author = {
-  name: 'Site Author',
+  name: "Ibn Saad",
   avatar,
-  url: '#',
+  url: "https://github.com/IbnSaad2910",
 };
 
 export type Author = typeof author;
-
-

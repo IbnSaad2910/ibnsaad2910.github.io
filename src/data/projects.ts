@@ -1,58 +1,57 @@
-import PhoenixIcon from '../assets/logos/Phoenix-logo.svg?raw';
-import N8nIcon from '../assets/logos/N8n-logo.svg?raw';
-import SupabaseIcon from '../assets/logos/Supabase-logo.svg?raw';
-import PosthogIcon from '../assets/logos/posthog-logo.svg?raw';
-import PythonIcon from '../assets/logos/Python-logo.svg?raw';
-import TailwindIcon from '../assets/logos/Tailwind-logo.svg?raw';
-
+import LaravelIcon from "../assets/logos/Laravel-logo.svg?raw";
+import ReactIcon from "../assets/logos/React-logo.svg?raw";
+import VueIcon from "../assets/logos/Vue-logo.svg?raw";
+import DotnetIcon from "../assets/logos/Dotnet-logo.svg?raw";
+import GoIcon from "../assets/logos/Go-logo.svg?raw";
 
 export const projects = [
-	{
-		title: "Workflow Automation Orchestrator (n8n)",
-		techStack: "n8n • Node.js • TypeScript • PostgreSQL",
-		description: "Event‑driven workflows for data sync, notifications, and back‑office automation. Custom nodes, secrets management, retries, and metrics.",
-		ctaText: "View Repo →",
-		ctaLink: "#",
-		icon: N8nIcon
-	},
-	{
-		title: "SaaS API Starter (Auth, Billing, RBAC)",
-		techStack: "Node.js • TypeScript • PostgreSQL • Supabase • Stripe",
-		description: "Production‑ready REST/GraphQL API with JWT auth, role‑based access, Stripe subscriptions, and rate‑limited endpoints.",
-		ctaText: "Get Source < / >",
-		ctaLink: "#",
-		icon: SupabaseIcon
-	},
-	{
-		title: "Realtime Chat Service",
-		techStack: "Phoenix • WebSockets • Redis • Docker",
-		description: "Low‑latency chat with channels, presence, and backpressure handling. Includes load tests and horizontal scaling notes.",
-		ctaText: "Live Demo →",
-		ctaLink: "#",
-		icon: PhoenixIcon
-	},
-	{
-		title: "Product Analytics Pipeline",
-		techStack: "Node.js • PostHog • PostgreSQL • ClickHouse",
-		description: "Event ingestion, batching, and replay; user properties and cohorts; dashboards for funnels, retention, and feature adoption.",
-		ctaText: "Read Case Study →",
-		ctaLink: "#",
-		icon: PosthogIcon
-	},
-	{
-		title: "Data Ingestion & ETL",
-		techStack: "Python • Airflow • PostgreSQL • S3",
-		description: "Scheduled extract/transform/load with schema migrations, data quality checks, and partitioned tables for analytics.",
-		ctaText: "View Repo →",
-		ctaLink: "#",
-		icon: PythonIcon
-	},
-	{
-		title: "Design System",
-		techStack: "React • TypeScript • Tailwind CSS • Storybook",
-		description: "Accessible UI kit with tokens, theming, and testing. Published as a versioned package with changelogs and docs.",
-		ctaText: "Docs →",
-		ctaLink: "#",
-		icon: TailwindIcon
-	},
+  {
+    title: "Chirper",
+    techStack: "Laravel • SQLite",
+    description: "Simple Laravel app with authentication & CRUD operations.",
+    ctaText: "View Repo →",
+    ctaLink: "https://github.com/IbnSaad2910/chirper",
+    icon: LaravelIcon,
+  },
+  {
+    title: "Todo List",
+    techStack: "React • TypeScript • Tailwind CSS",
+    description: "Simple React w/ TypeScript todo list app.",
+    ctaText: "View Repo →",
+    ctaLink: "https://github.com/IbnSaad2910/todo-list",
+    icon: ReactIcon,
+  },
+  {
+    title: "Food Management System",
+    techStack: "Vue • TypeScript • Tailwind CSS",
+    description: "Simple Vue w/ TypeScript food management system app.",
+    ctaText: "View Repo →",
+    ctaLink: "https://github.com/IbnSaad2910/se-take-home-assignment",
+    icon: VueIcon,
+  },
+  {
+    title: "Budget Auditor",
+    techStack: ".NET MAUI • Firebase",
+    description:
+      "A mobile app developed using .NET MAUI framework to help you manage your expenses.",
+    ctaText: "View Repo →",
+    ctaLink: "https://github.com/IbnSaad2910/BudgetAuditor",
+    icon: DotnetIcon,
+  },
+  {
+    title: "Property Listing API",
+    techStack: "Laravel",
+    description: "A simple API for listing properties using Laravel.",
+    ctaText: "View Repo →",
+    ctaLink: "https://github.com/IbnSaad2910/iqi-web-assessment",
+    icon: LaravelIcon,
+  },
+  {
+    title: "Transport Management System API",
+    techStack: "Go",
+    description: "A simple transport management system using Go.",
+    ctaText: "View Repo →",
+    ctaLink: "https://github.com/IbnSaad2910/transpot-management-system-api",
+    icon: GoIcon,
+  },
 ];

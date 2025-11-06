@@ -1,30 +1,17 @@
 export const studies = [
   {
-    title: "B.S. in Computer Science",
-    institution: "State University",
+    title: "B.S. in Computer Science (Software Engineering)",
+    institution: "Universiti Tenaga Nasional (UNITEN)",
     description:
-      "Core CS foundations: data structures, algorithms, operating systems, networking, and databases; team capstone in web systems.",
+      "Core CS foundations: discrete structures, operating systems, networking, and databases.",
     tags: [
-      "Algorithms",
-      "Data Structures",
       "Operating Systems",
       "Databases",
-      "Networking",
-    ],
-  },
-  {
-    title: "M.S. in Software Engineering",
-    institution: "Tech Institute",
-    description:
-      "Focus on distributed systems, testing strategies, and cloud architecture; thesis on resilience patterns in microservices.",
-    tags: [
-      "Distributed Systems",
-      "Cloud Architecture",
-      "Testing",
-      "Microservices",
+      "Discrete Structures",
+      "Data Communication and Computer Networks",
+      "Software Engineering Principles",
     ],
   },
 ];
 
 export type StudyItem = (typeof studies)[number];
-

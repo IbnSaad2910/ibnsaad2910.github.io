@@ -1,7 +1,7 @@
-import jobIconRaw from '../assets/icons/job-title-icon.svg?raw';
-import companyIconRaw from '../assets/icons/company-icon.svg?raw';
-import locationIconRaw from '../assets/icons/location-icon.svg?raw';
-import { sanitizeToOutline } from '../lib/svg';
+import jobIconRaw from "../assets/icons/job-title-icon.svg?raw";
+import companyIconRaw from "../assets/icons/company-icon.svg?raw";
+import locationIconRaw from "../assets/icons/location-icon.svg?raw";
+import { sanitizeToOutline } from "../lib/svg";
 
 export const workIcons = {
   job: sanitizeToOutline(jobIconRaw, 15),
@@ -11,73 +11,37 @@ export const workIcons = {
 
 export const work = [
   {
-    title: "Senior Software Engineer",
-    company: "Acme Cloud",
-    region: "United States",
+    title: "Full Stack Developer",
+    company: "Nexlaw Pty Ltd",
+    region: "Malaysia",
     description:
-      "Led the design and delivery of a multi‑tenant platform, decomposed critical monolith paths into services, improved p95 latency by 40%, defined SLOs and on‑call rotations, and mentored junior engineers.",
-    technologies: [
-      "TypeScript",
-      "Node.js",
-      "React",
-      "PostgreSQL",
-      "Redis",
-      "AWS",
-      "Docker",
-      "Kubernetes",
-      "Terraform",
-      "GraphQL",
-    ],
+      "Developed Microsoft Word Add-In integrated with NexLaw platform, which helps lawyers to streamline contract review and drafting processes. Design and manage the web application back-end including database and API integration with AWS infrastructure. Design and build the web application front-end including deployment to AWS infrastructure. Debug, maintain and enhance the web application robustness, performance, and reliability",
+    technologies: ["Laravel", "MySQL", "Vue", "AWS", "Python", "Axios", "Nuxt"],
   },
   {
-    title: "Staff Software Engineer",
-    company: "FinchPay",
-    region: "Global",
+    title: "Full Stack Developer",
+    company: "Nexlaw Pty Ltd",
+    region: "Malaysia",
     description:
-      "Architected event‑driven payment services with idempotency and retries, introduced Kafka for async processing, enforced API versioning, and drove observability with structured logging and tracing.",
-    technologies: [
-      "TypeScript",
-      "NestJS",
-      "Kafka",
-      "PostgreSQL",
-      "Redis",
-      "gRPC",
-      "OpenTelemetry",
-      "AWS",
-    ],
+      "Developed backend API & frontend view for audience intelligence feature - NexIntelligence - for NexMind platform. Design and manage the web application back-end including database and API integration with AWS infrastructure. Design and build the web application front-end including deployment to AWS infrastructure. Debug, maintain and enhance the web application robustness, performance, and reliability",
+    technologies: ["Laravel", "MySQL", "Vue", "AWS", "Python"],
   },
   {
-    title: "Senior Frontend Engineer",
-    company: "Insight Analytics",
-    region: "Europe",
+    title: "Web Developer",
+    company: "NexMind AI Sdn Bhd",
+    region: "Malaysia",
     description:
-      "Owned the design system and SSR/ISR strategy, improved Core Web Vitals (LCP/INP) into the green, and shipped accessible UI components with strong tests and story coverage.",
+      "Maintain and manage web hosting and DNS for the company and clients. Debug, maintain and enhance websites for the company and clients via WordPress, Shopify, OpenCart and Wix. Manage user accounts and configuring and troubleshooting applications via Office 365.",
     technologies: [
-      "React",
-      "Next.js",
-      "Astro",
-      "Tailwind CSS",
-      "Playwright",
-      "Vitest",
-    ],
-  },
-  {
-    title: "Software Engineer",
-    company: "LaunchPad",
-    region: "Brazil",
-    description:
-      "Built MVPs end‑to‑end: designed REST/GraphQL APIs, set up CI/CD with preview environments, introduced feature flags, and migrated data to Postgres.",
-    technologies: [
-      "Node.js",
-      "Express",
-      "GraphQL",
-      "Supabase",
-      "PostgreSQL",
-      "GitHub Actions",
-      "Docker",
+      "WHM/cPanel",
+      "WordPress",
+      "Shopify",
+      "Cloudflare",
+      "Google Analytics",
+      "Google Tag Manager",
+      "Google Search Console",
     ],
   },
 ];
 
 export type WorkItem = (typeof work)[number];
-
