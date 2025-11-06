@@ -9,7 +9,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "Data Communication and Computer Networks",
+  site: "https://ibnsaad2910.github.io/",
   integrations: [mdx(), sitemap()],
 
   vite: {
