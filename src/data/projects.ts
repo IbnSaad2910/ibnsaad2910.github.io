@@ -16,7 +16,7 @@ export const projects = [
   },
   {
     title: "Property Listing API",
-    techStack: "Laravel",
+    techStack: "Laravel • MySQL",
     description: "A simple API for listing properties using Laravel.",
     ctaText: "View Repo →",
     ctaLink: "https://github.com/IbnSaad2910/iqi-web-assessment",
