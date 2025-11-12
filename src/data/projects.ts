@@ -3,6 +3,7 @@ import ReactIcon from "../assets/logos/React-logo.svg?raw";
 import VueIcon from "../assets/logos/Vue-logo.svg?raw";
 import DotnetIcon from "../assets/logos/Dotnet-logo.svg?raw";
 import GoIcon from "../assets/logos/Go-logo.svg?raw";
+import NuxtIcon from "../assets/logos/Nuxt-logo.svg?raw";
 
 export const projects = [
   {
@@ -14,12 +15,12 @@ export const projects = [
     icon: LaravelIcon,
   },
   {
-    title: "Todo List",
-    techStack: "React • TypeScript • Tailwind CSS",
-    description: "Simple React w/ TypeScript todo list app.",
+    title: "Property Listing API",
+    techStack: "Laravel",
+    description: "A simple API for listing properties using Laravel.",
     ctaText: "View Repo →",
-    ctaLink: "https://github.com/IbnSaad2910/todo-list",
-    icon: ReactIcon,
+    ctaLink: "https://github.com/IbnSaad2910/iqi-web-assessment",
+    icon: LaravelIcon,
   },
   {
     title: "Food Management System",
@@ -30,6 +31,22 @@ export const projects = [
     icon: VueIcon,
   },
   {
+    title: "Recipe App",
+    techStack: "Nuxt",
+    description: "A simple recipe app using Nuxt.",
+    ctaText: "View Repo →",
+    ctaLink: "https://github.com/IbnSaad2910/recipe-app",
+    icon: NuxtIcon,
+  },
+  {
+    title: "Todo List",
+    techStack: "React • TypeScript • Tailwind CSS",
+    description: "Simple React w/ TypeScript todo list app.",
+    ctaText: "View Repo →",
+    ctaLink: "https://github.com/IbnSaad2910/todo-list",
+    icon: ReactIcon,
+  },
+  {
     title: "Budget Auditor",
     techStack: ".NET MAUI • Firebase",
     description:
@@ -37,14 +54,6 @@ export const projects = [
     ctaText: "View Repo →",
     ctaLink: "https://github.com/IbnSaad2910/BudgetAuditor",
     icon: DotnetIcon,
-  },
-  {
-    title: "Property Listing API",
-    techStack: "Laravel",
-    description: "A simple API for listing properties using Laravel.",
-    ctaText: "View Repo →",
-    ctaLink: "https://github.com/IbnSaad2910/iqi-web-assessment",
-    icon: LaravelIcon,
   },
   {
     title: "Transport Management System API",
