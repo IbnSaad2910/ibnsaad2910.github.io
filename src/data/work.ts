@@ -15,7 +15,7 @@ export const work = [
     company: "Nexlaw Pty Ltd",
     region: "Malaysia",
     description:
-      "Developed Microsoft Word Add-In integrated with NexLaw platform, which helps lawyers to streamline contract review and drafting processes. Design and manage the web application back-end including database and API integration with AWS infrastructure. Design and build the web application front-end including deployment to AWS infrastructure. Debug, maintain and enhance the web application robustness, performance, and reliability",
+      "Developed a Microsoft Word Add-In integrated with the NexLaw platform to help lawyers streamline contract review and drafting processes. Designed and managed the web application’s back-end, including database architecture and API integration within AWS infrastructure. Built and deployed the front-end interface to AWS, ensuring a responsive and user-friendly experience. Continuously debugged, maintained, and enhanced the application’s overall robustness, performance, and reliability to support seamless user operations.",
     technologies: ["Laravel", "MySQL", "Vue", "AWS", "Python", "Axios", "Nuxt"],
   },
   {
@@ -23,7 +23,7 @@ export const work = [
     company: "Nexlaw Pty Ltd",
     region: "Malaysia",
     description:
-      "Developed backend API & frontend view for audience intelligence feature - NexIntelligence - for NexMind platform. Design and manage the web application back-end including database and API integration with AWS infrastructure. Design and build the web application front-end including deployment to AWS infrastructure. Debug, maintain and enhance the web application robustness, performance, and reliability",
+      "Developed the back-end APIs and front-end interface for the NexIntelligence Audience Intelligence feature within the NexMind platform. Designed and managed the web application’s back-end, including database architecture and API integration with AWS infrastructure. Built and deployed the front-end components to AWS, ensuring a responsive and intuitive user experience. Continuously debugged, optimized, and enhanced the application’s performance, stability, and reliability to support data-driven analytics and seamless functionality.",
     technologies: ["Laravel", "MySQL", "Vue", "AWS", "Python"],
   },
   {
@@ -31,7 +31,7 @@ export const work = [
     company: "NexMind AI Sdn Bhd",
     region: "Malaysia",
     description:
-      "Maintain and manage web hosting and DNS for the company and clients. Debug, maintain and enhance websites for the company and clients via WordPress, Shopify, OpenCart and Wix. Manage user accounts and configuring and troubleshooting applications via Office 365.",
+      "Maintained and managed web hosting environments and DNS configurations for both the company and its clients. Oversaw and enhanced websites built on platforms such as WordPress, Shopify, OpenCart, and Wix, ensuring optimal performance and user experience. Managed user accounts and handled application configuration and troubleshooting through Office 365, supporting smooth day-to-day operations and client service delivery.",
     technologies: [
       "WHM/cPanel",
       "WordPress",
