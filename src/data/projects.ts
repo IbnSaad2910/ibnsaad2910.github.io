@@ -32,7 +32,7 @@ export const projects = [
   },
   {
     title: "Recipe App",
-    techStack: "Nuxt",
+    techStack: "Nuxt • TypeScript • Tailwind CSS",
     description: "A simple recipe app using Nuxt.",
     ctaText: "View Repo →",
     ctaLink: "https://github.com/IbnSaad2910/recipe-app",
