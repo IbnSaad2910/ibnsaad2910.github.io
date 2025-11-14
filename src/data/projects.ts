@@ -47,6 +47,14 @@ export const projects = [
     icon: ReactIcon,
   },
   {
+    title: "MovieFlix",
+    techStack: "React Native • Expo • TypeScript • Tailwind CSS",
+    description: "Simple movie app using React Native with Expo",
+    ctaText: "View Repo →",
+    ctaLink: "https://github.com/IbnSaad2910/todo-list",
+    icon: ReactIcon,
+  },
+  {
     title: "Budget Auditor",
     techStack: ".NET MAUI • Firebase",
     description:
