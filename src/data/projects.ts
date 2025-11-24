@@ -39,11 +39,11 @@ export const projects = [
     icon: NuxtIcon,
   },
   {
-    title: "Todo List",
-    techStack: "React • TypeScript • Tailwind CSS",
-    description: "Simple React w/ TypeScript todo list app.",
+    title: "FinShark",
+    techStack: "React • TypeScript • Tailwind CSS • .NET Web API • MSSQL",
+    description: "Finance app w/ React frontend & .NET Web API backend",
     ctaText: "View Repo →",
-    ctaLink: "https://github.com/IbnSaad2910/todo-list",
+    ctaLink: "https://github.com/IbnSaad2910/FinShark",
     icon: ReactIcon,
   },
   {
